@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("Scifi.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.ylapalkki {
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 80%;
+    padding: 20px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 20px;
+}
+.Chrono,.mielipide,.kuvia {
+    background-color: rgba(79, 110, 169, 0.708);
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 16px;
+    height: auto;
+}
+.Chrono {
+    min-height: 200px;
+}
+.mielipide,.kuvia {
+    min-height: 300px;
+}
+.column {
+    flex: 1;
+    padding: 15px;
+    width: 30%;
+    margin: 5px auto;
+    background-color: rgba(79, 110, 169, 0.708);
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 900px) {
+    .ylapalkki {
+        gap: 10px;
+    }
+
+    .Chrono,.mielipide,.kuvia {
+        width: 90%;
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .ylapalkki {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Chrono,.mielipide,.kuvia {
+        width: 95%;
+        font-size: 18px;
+        padding: 15px;
+    }
+    .column {
+        width: 90%;
+    }
+}
+.img_left {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    float: left;
+    max-width: 200px;
+    flex-direction: row;
+}
+
+.hahmo-kuva {
+    max-width: 150px;
+    height: auto;
+}
+
+.intro {
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.unit {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.img_right {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    float: right;
+    max-width: 200px;
+    flex-direction: row-reverse
+} 
+html {
+    scroll-behavior: smooth;
+}
